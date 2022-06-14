@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <title>Solicitud Información</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="logo"><span class="nombre-empresa"><img src="images/logo_seleguin_thumb.png"></span></h1>
+        <div class="wrapper animated bounceInLeft">
+          <div class="info-empresa">
+            
+            <h3>Contactar:</h3>
+            <ul class="servicios">
+              <li><i class="fa fa-map-marker"></i> Calle Cualquiera, 44</li>
+              <li><i class="fa fa-mobile"></i> +34 652 259 377</li>
+              <li><i class="fa fa-envelope"></i> info@empresa.com</li>
+            </ul>
+          </div>
+          <div class="contacto">
+            <h3>Enviar Correo</h3>
+            <form class="formulario" action="registro.php" method="POST"> 
+              <p>
+                <label>Nombre</label>
+                <input type="text" name="nombre" required>
+              </p>
+              <p>
+                <label>Empresa</label>
+                <input type="text" name="empresa">
+              </p>
+              <p>
+                <label>Correo</label>
+                <input type="email" name="email" required>
+              </p>
+              <p>
+                <label>Teléfono</label>
+                <input type="text" name="telefono">
+              </p>
+              <p class="full">
+                <label>Mensaje</label>
+                <textarea name="mensaje" required></textarea>
+              </p>
+              <p class="full">
+                <button class="boton-enviar">Enviar</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+
+
